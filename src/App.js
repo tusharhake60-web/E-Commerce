@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Login from './Login';
 import BussinessDashboard from './BussinessDashboard';
-import BuserNavbar from './BuserNavbar';
+
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './Home';
 import AddProduct from './AddProduct';
@@ -12,8 +12,8 @@ import GetAllProduct from './GetAllProduct';
 import BuserOrder from './BuserOrder';
 import UserDashboard from './UserDashboard';
 import CommanNavBar from './CommanNavBar';
-import UserNavBar from './UserNavBar';
-import { useLocation } from 'react-router-dom';
+
+
 import UserOrder from './UserOrder';
 import CHome from './CHome';
 
