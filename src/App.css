@@ -25,14 +25,37 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #ffff31;
 }
 
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.bg {
+  background-image: url("https://i1-c.pinimg.com/736x/ec/05/00/ec0500a0d20a15d089611d9f3b0a91bd.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.card-login {
+  width: 500px;
+  height: 600px;
+  background-image: url("https://imgs.search.brave.com/vUHfgF1EQKPngNxjlZjtfys-gMw5nqgV--OP5Q8y4Y0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNjkv/MjU2LzA3Ny9zbWFs/bC9yZWQtbGlnaHQt/b24tYS1ibGFjay1i/YWNrZ3JvdW5kLXBo/b3RvLmpwZw");
+  margin: auto;
+  background-position: center;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+
+
 }

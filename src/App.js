@@ -1,23 +1,51 @@
 import logo from './logo.svg';
 import './App.css';
+import Login from './Login';
+import BussinessDashboard from './BussinessDashboard';
+import BuserNavbar from './BuserNavbar';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './Home';
+import AddProduct from './AddProduct';
+import ViewProductBuser from './ViewProductBuser';
+import Servicee from './Servicee';
+import GetAllProduct from './GetAllProduct';
+import BuserOrder from './BuserOrder';
+import UserDashboard from './UserDashboard';
+import CommanNavBar from './CommanNavBar';
+import UserNavBar from './UserNavBar';
+import { useLocation } from 'react-router-dom';
+import UserOrder from './UserOrder';
+import CHome from './CHome';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+
+
+      <BrowserRouter>
+
+
+
+        <Routes>
+          <Route path='/home' element={<Home></Home>}></Route>
+          <Route path='/addproduct' element={<AddProduct></AddProduct>}></Route>
+          <Route path='/viewproductbuser' element={<ViewProductBuser></ViewProductBuser>}></Route>
+          <Route path='/service' element={<Servicee></Servicee>}></Route>
+          <Route path='/bussinessdashboard' element={<BussinessDashboard></BussinessDashboard>}></Route>
+          <Route path='/border' element={<BuserOrder></BuserOrder>}></Route>
+          <Route path='/getallproduct' element={<GetAllProduct></GetAllProduct>}></Route>
+          <Route path='/userdashboard' element={<UserDashboard></UserDashboard>}></Route>
+          <Route path='/login' element={<Login></Login>}></Route>
+          <Route path='/' element={<CommanNavBar></CommanNavBar>}></Route>
+          <Route path="/userorder" element={<UserOrder></UserOrder>}></Route>
+          <Route path="/chome" element={<CHome></CHome>}></Route>
+
+        </Routes>
+
+      </BrowserRouter>
+
     </div>
   );
 }
