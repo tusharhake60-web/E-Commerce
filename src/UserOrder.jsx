@@ -9,7 +9,7 @@ export default function UserOrder() {
 
     useEffect(() => {
         let user = JSON.parse(localStorage.getItem("userinfo"));
-        axios.get(`http://localhost:8080/getordersuser?email=${user.email}`)
+        axios.get(`https://e-commerce-backend-2-20tr.onrender.com/getordersuser?email=${user.email}`)
             .then((response) => {
                 setorders(response.data);
             })
@@ -19,7 +19,7 @@ export default function UserOrder() {
     })
     let cancleorder = (oid) => {
 
-        axios.delete(`http://localhost:8080/cancleorder?oid=${oid}`)
+        axios.delete(`https://e-commerce-backend-2-20tr.onrender.com/cancleorder?oid=${oid}`)
             .then((response) => {
                 alert(response.data);
             })
@@ -38,7 +38,7 @@ export default function UserOrder() {
                                 <div class="card" style={{ "width": "15rem", }}>
                                     {/* <img src={order.image} class="card-img-top" alt="..."></img> */}
                                     <div class="card-body">
-                                        <h5 class="card-title">{orders.pname}</h5>
+                                        <h5 class="card-title">{order.pname}</h5>
                                         <p class="card-text">
                                             <p>Product Name:<strong>{order.pname}</strong></p>
                                             <p>Order Product price:<strong>{order.price}</strong></p>
