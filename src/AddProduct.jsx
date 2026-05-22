@@ -80,7 +80,7 @@ export default function AddProduct() {
                     <div className='text-center mb-4'>
 
                         <label className="form-label">Photo Preview</label><br></br>
-                        <img src={photo} width="250"></img>
+                        <img src={photo} alt="product" width="250"></img>
 
                     </div>
                     <div className='text-center'>
