@@ -18,7 +18,7 @@ export default function Login() {
     let userregister = (event) => {
         event.preventDefault();
         let u = { fname, lname, email, password, cpassword, utype }
-        axios.post(`http://localhost:8080/register`, u)
+        axios.post(`https://e-commerce-backend-2-20tr.onrender.com/register`, u)
             .then((response) => {
                 alert(response.data);
             })
@@ -34,7 +34,7 @@ export default function Login() {
         event.preventDefault();
         let user = { email, password };
 
-        axios.post('http://localhost:8080/login', user)
+        axios.post('https://e-commerce-backend-2-20tr.onrender.com/login', user)
             .then((response) => {
                 if (response.data) {
                     let user = response.data;
