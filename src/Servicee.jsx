@@ -5,7 +5,7 @@ import UserNavbar from './UserNavBar';
 
 export default function Servicee() {
 
-    let user = localStorage.getItem("userinfo");
+
     let u = JSON.parse(localStorage.getItem("userinfo"));
 
     const services = [

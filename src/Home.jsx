@@ -2,14 +2,14 @@ import React from 'react';
 
 import BuserNavbar from './BuserNavbar';
 import UserNavbar from './UserNavBar';
-import CommanNavBar from './CommanNavBar';
+
 
 
 
 
 
 function Home() {
-    let user = localStorage.getItem("userinfo");
+
     let u = JSON.parse(localStorage.getItem("userinfo"));
 
     return (
@@ -51,13 +51,6 @@ function Home() {
     );
 }
 
-const btnStyle = {
-    padding: "10px 20px",
-    backgroundColor: "blue",
-    color: "white",
-    border: "none",
-    borderRadius: "5px",
-    cursor: "pointer",
-};
+
 
 export default Home;

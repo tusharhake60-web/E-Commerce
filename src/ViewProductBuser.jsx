@@ -84,7 +84,7 @@ export default function ViewProductBuser() {
                         product.map((p) =>
                             <div className='col'>
                                 <div class="card" style={{ "width": "15rem", }}>
-                                    <img src={p.photo} class="card-img-top" alt="..."></img>
+                                    <img src={p.photo} class="card-img-top" alt="product"></img>
                                     <div class="card-body">
                                         <h5 class="card-title">{p.pname}</h5>
                                         <p class="card-text">
@@ -145,7 +145,7 @@ export default function ViewProductBuser() {
                                     <div className='text-center mb-4'>
 
                                         <label className="form-label">Photo Preview</label><br></br>
-                                        <img src={photo} width="250" ></img>
+                                        <img src={photo} width="250" alt="product"></img>
 
                                     </div>
                                     <div className='text-center'>
